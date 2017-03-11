@@ -1,18 +1,17 @@
 /* start header styles */
-
-.header .header-slider{
+header .header-slider{
     color: #EEE;
     height: 600px;
     overflow: hidden;
 }
-.header .header-slider .intro{
+header .header-slider .intro{
     background-image: url('./images/nav.jpg');
     height: 600px;
     text-align: center;
     color: #FFF;
     padding-top:280px; 
 }
-.header .header-slider .intro h2{
+header .header-slider .intro h2{
     border-top: 2px solid #FFF;;
     border-bottom: 2px solid #FFF;
     width: 400px;
@@ -20,7 +19,7 @@
     margin: 0 auto 10px auto;
     padding: 5px 0;
 }
-.header .header-slider .intro button{
+header .header-slider .intro button{
     color: #FFF;
     background: none;
     width: 140px;
@@ -28,35 +27,35 @@
     border: 1px solid #FFF;
     padding: 2px;
 }
-.header .header-navbar .container{
+header .header-navbar .container{
     background-color: #252F31;
     color:#FFF;
     overflow:hidden;
 }
 
-.header .header-navbar .container h2{
+header .header-navbar .container h2{
    float:left;
    padding-left: 20px;
 }
 
-.header .header-navbar .container h2 span{
+header .header-navbar .container h2 span{
    color:#2A7240;
 }
-.header .header-navbar .container ul{
+header .header-navbar .container ul{
     list-style: none;
     padding-left: 0px;
     float:right;
 }
 
-.header .header-navbar .container ul li{
+header .header-navbar .container ul li{
     float: left;
     padding: 10px;
 }
-.header .header-navbar .container ul li a{
+header .header-navbar .container ul li a{
     color: #FFF;
     text-decoration: none;
 }
-.header .header-navbar .container ul li a:hover{
+header .header-navbar .container ul li a:hover{
    color:#26975E;
 }
 
@@ -177,7 +176,7 @@
 }
 progress         
 {
-    /* Turns off styling - not usually needed, but good to know. */
+    /* Turns off default styling  */
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
@@ -413,25 +412,25 @@ progress::-webkit-progress-value {
 /* end of contact me  styles */
 
 /* start footer styles */
-.footer .container{
+footer .container{
     text-align: center;
     background-color: #191E22;
     color: #363B3F;
     padding: 20px 0 0 0;
     overflow: hidden;
 }
-.footer span{
+footer span{
     display: block;
     color: #FFF;
 }
-.footer ul{
+footer ul{
     list-style: none;
     padding-left: 0px;
 }
-.footer ul li{
+footer ul li{
     display: inline-block;
 }
-.footer ul li img{
+footer ul li img{
     width: 32px;
     height: 32px;
 }
