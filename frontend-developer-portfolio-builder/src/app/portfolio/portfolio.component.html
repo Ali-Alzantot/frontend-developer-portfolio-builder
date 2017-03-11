@@ -1,0 +1,240 @@
+  <!-- start header -->
+            <div id="header" class="header">
+                <div class="header-slider">
+                    <div class="container">
+                        <div class="intro">
+                            <h2>FRONTEND DEVELOPER</h2>
+                            <button>LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-navbar">
+                    <div class="container">
+                        <h2><span>{{sharedInformationService.name}}</span></h2>
+                        <ul>
+                            <li><a>HOME</a></li>
+                            <li><a>ABOUT ME</a></li>
+                            <li><a>SKILLS</a></li>
+                            <li><a>RESUME</a></li>
+                            <li><a>TESTIMONIALS</a></li>
+                            <!--<li><a>PORTFOLIO</a></li>-->
+                            <li><a>CONTACT ME</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end header -->
+
+            <!-- strat features -->
+            <div class="features">
+                <div class="container">
+                    <div class="feat">
+                        <h2>VALUES</h2>
+                        <p>{{sharedInformationService.values}}</p>
+                    </div>
+                    <div class="feat">
+                        <h2>GOALS</h2>
+                        <p>{{sharedInformationService.goals}}</p>
+                    </div>
+                    <div class="feat">
+                        <h2>HOBBIES</h2>
+                        <p>{{sharedInformationService.hobbies}}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of  features -->
+
+            <!-- start about me -->
+            <div id="about-me" class="about-me">
+                <div class="container">
+                    <div class="img">
+                         <img [src]="sharedInformationService.personalImg">
+                    </div>
+                   <div class="info">
+                        <h2>ABOUT ME</h2>
+                        <p>{{sharedInformationService.about}}</p>
+                        <div class="hobbies">
+                            <div class="content">
+                                <div class="icon">
+                                    <img src="./images/icon.png">
+                                </div>
+                                <div class="text">
+                                    <h3>WEB DESIGN</h3>
+                                    <p>{{sharedInformationService.webDesign}}</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="icon">
+                                    <img src="./images/icon2.png">
+                                </div>
+                                <div class="text">
+                                    <h3>GRAPHIC DESIGN</h3>
+                                    <p>{{sharedInformationService.graphicDesign}}</p>
+                                </div>
+                            </div>
+
+                             <div class="content">
+                                <div class="icon">
+                                    <img src="./images/icon3.png">
+                                </div>
+                                <div class="text">
+                                    <h3>ONLINE MARKETING</h3>
+                                    <p>{{sharedInformationService.onlineMarketing}}</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="icon">
+                                    <img src="./images/icon4.png">
+                                </div>
+                                <div class="text">
+                                    <h3>SEO</h3>
+                                    <p>{{sharedInformationService.seo}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of  about me -->
+
+             <!-- start my skills -->
+             <div id="my-skills" class="my-skills">
+                 <div class="container">
+                     <div class="skills">
+                         <h2>MY SKILLS</h2>
+                         <p>{{sharedInformationService.skills}}</p>
+                         <a simplePageScroll href="#contact-me">Contact Me</a>
+                     </div>
+                     <div class="progress">
+                         <div class="technique">
+                             <h3>HTML/CSS</h3>
+                             <div>
+                                 <progress  value="{{sharedInformationService.firstProgress}}" max="100"></progress>
+                             </div>
+                         </div>
+                          <div class="technique">
+                             <h3>HTML5/CSS3</h3>
+                             <div>
+                                 <progress  value="{{sharedInformationService.secondProgress}}" max="100"></progress>
+                             </div>
+                         </div>
+                          <div class="technique">
+                             <h3>JavaScript</h3>
+                             <div>
+                                 <progress  value="{{sharedInformationService.thirdProgress}}" max="100"></progress>
+                             </div>
+                         </div>
+                         <div class="technique">
+                             <h3>AngularJS</h3>
+                             <div>
+                                 <progress  value="{{sharedInformationService.fourthProgress}}" max="100"></progress>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <!-- end of my skills -->
+
+             <!-- start resume -->
+             <div id="resume" class="resume">
+                 <div class="container">
+                     <h2>RESUME</h2>
+                     <p>you can download my Updated Resume from the link below.</p>
+                     <button (click)="downloadResume()">Download RESUME</button>
+                 </div>
+             </div>
+             <!-- end of my resume -->
+
+             <!-- start education  -->
+              <div class="my-education">
+                 <div class="container">
+                     <div class="main">
+                         <h2>MY EDUCATION</h2>
+                         <p>{{sharedInformationService.education}}</p>
+                     </div>
+                     <div class="exp">
+                         <h3>{{sharedInformationService.educationDegree}}</h3>
+                         <span>{{sharedInformationService.educationPlace}}/{{sharedInformationService.educationStartDate}} - {{sharedInformationService.educationEndDate}} </span>
+                         <span class="gpa">{{sharedInformationService.educationGpa}} GPA</span>
+                         <hr>
+                         <p>{{sharedInformationService.educationDescribe}}</p>
+                     </div>
+                 </div>
+             </div>
+             <!-- end of my education -->
+
+              <!-- start work experince  -->
+              <div class="work-experince">
+                 <div class="container">
+                     <div class="main">
+                         <h2>MY EXPERINCE</h2>
+                        <p>{{sharedInformationService.workExp}}</p>
+                     </div>
+                     <div class="exp">
+                         <h3>{{sharedInformationService.currentPosition}}</h3>
+                         <span>{{sharedInformationService.workPlace}} / {{sharedInformationService.workStartDate}} - {{sharedInformationService.workEndDate}} </span>
+                         <span class="year">{{sharedInformationService.workYears}} Year</span>
+                         <hr>
+                         <p>{{sharedInformationService.workDescribe}}</p>
+                     </div>
+                 </div>
+             </div>
+             <!-- end of work experince -->
+
+               <!-- start testimonials-->
+             <div id="testimonials" class="testimonials">
+                 <div class="container">
+                     <blockquote>"{{sharedInformationService.testimonials}}."</blockquote>
+                     <h3>{{sharedInformationService.testimonialsPerson}}</h3>
+                     <ul>
+                         <li></li>
+                         <li class="active"></li>
+                         <li></li>
+                         <li></li>
+                     </ul>
+                 </div>
+             </div>
+             <!-- end of testimonials -->
+             
+             <!-- start contact me -->
+             <div id="contact-me" class="contact-me">
+                 <div class="container">
+                     <div class="info">
+                         <h2>CONTACT ME</h2>
+                         <p>If you would like more information don't hesitate to contact me,
+                             my contact detalis avaiable upon request.
+                         </p>
+                         <span id="address">{{sharedInformationService.address}}</span>
+                         <span id="email"><span>Email:</span> {{sharedInformationService.email}}</span>
+                         <span id="phone"><span>phone:</span> {{sharedInformationService.phone}}</span>
+                     </div>
+                     <div class="form">
+                         <form>
+                             <label>Name*</label>
+                             <input type="text">
+                              <label>Email Address*</label>
+                             <input type="text">
+                             <label>Message*</label>
+                             <textarea></textarea>
+                             <input type="submit" value="Contact Me">
+                         </form>
+                     </div>
+                 </div>
+             </div>
+             <!-- end of contact me -->
+
+             <!-- start footer -->
+             <div class="footer">
+                 <div class="container">
+                    <span> Copyright 2017 {{sharedInformationService.name}}&copy; Built with Passion </span>
+                    <ul>
+                        <li><img (click)="gotoFacebook()" src="./images/facebook-icon.png"></li>
+                        <li><img (click)="gotoTwitter()" src="./images/twitter-icon.png"></li>
+                        <li><img (click)="gotoGithub()" src="./images/github-icon.png"></li>
+                        <li><img (click)="gotoLinkedin()" src="./images/linkedin-icon.png"></li>
+                    </ul>
+                 </div>
+             </div>
+             <!-- end of footer -->

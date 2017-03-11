@@ -1,0 +1,256 @@
+  <!-- start header -->
+         <form name="register" (submit)="submit()">
+            <div id="header" class="header">
+                <div class="header-slider">
+                    <div class="container">
+                        <div class="intro">
+                            <h2>FRONTEND DEVELOPER</h2>
+                            <button>LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-navbar">
+                    <div class="container">
+                        <h2><span> <input type="text" name="username"  [(ngModel)]="sharedInformationService.name" placeholder="pleas type your name" required></span></h2>
+                        <ul>
+                            <li><a>HOME</a></li>
+                            <li><a>ABOUT ME</a></li>
+                            <li><a>SKILLS</a></li>
+                            <li><a>RESUME</a></li>
+                            <li><a>TESTIMONIALS</a></li>
+                            <!--<li><a>PORTFOLIO</a></li>-->
+                            <li><a>CONTACT ME</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end header -->
+
+            <!-- strat features -->
+            <div class="features">
+                <div class="container">
+                    <div class="feat">
+                        <h2>VALUES</h2>
+                        <p> <textarea type="text" name="values"  [(ngModel)]="sharedInformationService.values" placeholder="pleas type your Values" required></textarea></p>
+                    </div>
+                    <div class="feat">
+                        <h2>GOALS</h2>
+                        <p> <textarea type="text" name="goals"  [(ngModel)]="sharedInformationService.goals" placeholder="pleas type your Goals" required></textarea></p>
+                    </div>
+                    <div class="feat">
+                        <h2>HOBBIES</h2>
+                        <p> <textarea type="text" name="hobbies"  [(ngModel)]="sharedInformationService.hobbies" placeholder="pleas type your Hobbies" required></textarea></p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of  features -->
+
+            <!-- start about me -->
+            <div id="about-me" class="about-me">
+                <div class="container">
+                    <div class="img">
+                           <label>Upload your photo</label>
+                          <input type="file" (change)="readUrl($event)" required>
+                    </div>
+                   <div class="info">
+                        <h2>ABOUT ME</h2>
+                        <p> <textarea name="about" [(ngModel)]="sharedInformationService.about"  placeholder="Tell us about you" required> </textarea></p>
+                        <div class="hobbies">
+                            <div class="content">
+                                <div class="icon">
+                                    <img src="./images/icon.png">
+                                </div>
+                                <div class="text">
+                                    <h3>WEB DESIGN</h3>
+                                    <p> <textarea type="text" name="webdesign" [(ngModel)]="sharedInformationService.webDesign" placeholder="What do you know about web design" required></textarea></p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="icon">
+                                    <img src="./images/icon2.png">
+                                </div>
+                                <div class="text">
+                                    <h3>GRAPHIC DESIGN</h3>
+                                    <p><textarea type="text" name="graphicdesign" [(ngModel)]="sharedInformationService.graphicDesign" placeholder="What do you know about graphic design" required> </textarea></p>
+                                </div>
+                            </div>
+
+                             <div class="content">
+                                <div class="icon">
+                                    <img src="./images/icon3.png">
+                                </div>
+                                <div class="text">
+                                    <h3>ONLINE MARKETING</h3>
+                                    <p> <textarea type="text" name="onlinemarketing" [(ngModel)]="sharedInformationService.onlineMarketing" placeholder="What do you know about online marketing" required></textarea></p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <div class="icon">
+                                    <img src="./images/icon4.png">
+                                </div>
+                                <div class="text">
+                                    <h3>SEO</h3>
+                                    <p><textarea type="text" name="seo"  [(ngModel)]="sharedInformationService.seo" placeholder="What do you know about online SEO" required></textarea></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of  about me -->
+
+             <!-- start my skills -->
+             <div id="my-skills" class="my-skills">
+                 <div class="container">
+                     <div class="skills">
+                         <h2>MY SKILLS</h2>
+                         <p><textarea name="txt" [(ngModel)]="sharedInformationService.skills" rows="10" cols="70" placeholder="Type your skills" required></textarea></p>
+                         <a simplePageScroll href="#contact-me">Contact Me</a>
+                     </div>
+                     <div class="progress">
+                         <fieldset>
+                             <legend>From grading scale out of 100 rate your knowledge of</legend>
+                         <div class="technique">
+                             <h3>HTML/CSS</h3>
+                             <input type="number" name="firstprogress" [(ngModel)]="sharedInformationService.firstProgress" min="0" max="100" required>
+                         </div>
+                          <div class="technique">
+                             <h3>HTML5/CSS3</h3>
+                              <input type="number" name="secondprogress" [(ngModel)]="sharedInformationService.secondProgress" min="0" max="100" required>
+                         </div>
+                          <div class="technique">
+                             <h3>JavaScript</h3>
+                             <input type="number" name="thirdprogress" [(ngModel)]="sharedInformationService.thirdProgress" min="0" max="100" required>
+                         </div>
+                         <div class="technique">
+                             <h3>AngularJS</h3>
+                             <input type="number" name="fourthprogress" [(ngModel)]="sharedInformationService.fourthProgress" min="0" max="100" required>
+                         </div>
+                         </fieldset>
+                     </div>
+                 </div>
+             </div>
+             <!-- end of my skills -->
+
+             <!-- start resume -->
+             <div id="resume" class="resume">
+                 <div class="container">
+                     <h2>RESUME</h2>
+                     <label>please put url for your Resume</label>
+                     <input type="url" name="resumeurl" [(ngModel)]="sharedInformationService.resumeUrl" required>
+                 </div>
+             </div>
+             <!-- end of my resume -->
+
+             <!-- start education  -->
+              <div class="my-education">
+                 <div class="container">
+                     <div class="main">
+                         <h2>MY EDUCATION</h2>
+                         <p> <textarea type="text" name="education" rows="10" cols="70" [(ngModel)]="sharedInformationService.education" placeholder="Describe your education journey!" required> </textarea></p>
+                     </div>
+                     <div class="exp">
+                        <label>What's your most recent degree</label>
+                        <input type="text" name="educationdegree" [(ngModel)]="sharedInformationService.educationDegree" required>
+                        <label>Where</label>
+                        <input type="text" name="educationplace" [(ngModel)]="sharedInformationService.educationPlace" required>
+                        <label>Start date</label>
+                        <input type="text" name="educationstartdate" [(ngModel)]="sharedInformationService.educationStartDate" required>
+                        <label>End date</label>
+                        <input type="text" name="educationenddate" [(ngModel)]="sharedInformationService.educationEndDate" required>
+                        <label>GPA</label>
+                        <input type="number" name="educationgpa" [(ngModel)]="sharedInformationService.educationGpa" required>
+                         <hr>
+                         <label>Describe it !</label>
+                         <input type="text" name="educationdescribe" [(ngModel)]="sharedInformationService.educationDescribe" required>
+                     </div>
+                 </div>
+             </div>
+             <!-- end of my education -->
+
+              <!-- start work experince  -->
+              <div class="work-experince">
+                 <div class="container">
+                     <div class="main">
+                         <h2>MY EXPERINCE</h2>
+                        <p><textarea type="text" name="workexp" rows="10" cols="70" [(ngModel)]="sharedInformationService.workExp" placeholder="Describe your work experince!" required> </textarea></p>
+                     </div>
+                     <div class="exp">
+                        <label>What's your current position</label>
+                        <input type="text" name="currentposition" [(ngModel)]="sharedInformationService.currentPosition" required>
+                        <label>Where</label>
+                        <input type="text" name="workplace" [(ngModel)]="sharedInformationService.workPlace" required>
+                        <label>Start date</label>
+                        <input type="text" name="workstartdate" [(ngModel)]="sharedInformationService.workStartDate" required>
+                        <label>End date</label>
+                        <input type="text" name="workenddate" [(ngModel)]="sharedInformationService.workEndDate" required>
+                        <label>how many years you spend there</label>
+                        <input type="number" name="workyears" [(ngModel)]="sharedInformationService.workYears" required>
+                        <hr>
+                        <label>Describe it !</label>
+                        <input type="text" name="workdescribe" [(ngModel)]="sharedInformationService.workDescribe" required>
+                     </div>
+                 </div>
+             </div>
+             <!-- end of work experince -->
+
+               <!-- start testimonials-->
+             <div id="testimonials" class="testimonials">
+                 <div class="container">
+                     <h2>TESTIMONIALS</h2>
+                     <blockquote><textarea type="text" name="testimonials" placeholder="Tell us what the best words said about you." [(ngModel)]="sharedInformationService.testimonials" required></textarea></blockquote>
+                     <h3><input type="text" name="testimonialsperson" placeholder="Said by whom." [(ngModel)]="sharedInformationService.testimonialsPerson" required></h3>
+                     <ul>
+                         <li></li>
+                         <li class="active"></li>
+                         <li></li>
+                         <li></li>
+                     </ul>
+                 </div>
+             </div>
+             <!-- end of testimonials -->
+
+             <!-- start contact me -->
+             <div id="contact-me" class="contact-me">
+                 <div class="container">
+                     <div class="info">
+                         <h2>CONTACT ME</h2>
+                         <p>If you would like more information don't hesitate to contact me,
+                             my contact detalis avaiable upon request.
+                         </p>
+                         <span id="address"> <textarea type="text" name="address" [(ngModel)]="sharedInformationService.address" placeholder="type your address" required></textarea></span>
+                         <span id="email"><span>Email:</span> <input type="text" name="email" [(ngModel)]="sharedInformationService.email" placeholder="type your email" required></span>
+                         <span id="phone"><span>phone:</span><input type="text" name="phone" [(ngModel)]="sharedInformationService.phone" placeholder="type your phone" required></span>
+                     </div>
+                     <div class="form">
+                         <form>
+                             <label>Name*</label>
+                             <input type="text">
+                              <label>Email Address*</label>
+                             <input type="text">
+                             <label>Message*</label>
+                             <textarea></textarea>
+                             <input type="submit" value="Contact Me">
+                         </form>
+                     </div>
+                 </div>
+             </div>
+             <!-- end of contact me -->
+
+             <!-- start footer -->
+             <div class="footer">
+                 <div class="container">
+                    <span> Copyright 2017 {{sharedInformationService.name}}&copy; Built with Passion </span>
+                    <ul>
+                        <li><img (click)="gotoFacebook()" src="./images/facebook-icon.png">  <input type="url" name="facebook" [(ngModel)]="sharedInformationService.facebook" placeholder="put your facebook account" required></li>
+                        <li><img (click)="gotoTwitter()" src="./images/twitter-icon.png"> <input type="url" name="twitter" [(ngModel)]="sharedInformationService.twitter" placeholder="put your twitter account" required></li>
+                        <li><img (click)="gotoGithub()" src="./images/github-icon.png"> <input type="url" name="github" [(ngModel)]="sharedInformationService.github" placeholder="put your github account" required></li>
+                        <li><img (click)="gotoLinkedin()" src="./images/linkedin-icon.png"> <input type="url" name="linkedin" [(ngModel)]="sharedInformationService.linkedin" placeholder="put your linkedin account" required></li>
+                    </ul>
+                    <input type="submit" value="Make it !">
+                 </div>
+             </div>
+        </form>
+        <!-- end of footer -->
