@@ -14,12 +14,12 @@ export class PortfolioInformationComponent implements OnInit {
   ngOnInit() {
   }
   submit():void{
+    localStorage.setItem("data",JSON.stringify(this.sharedInformationService));
     this.router.navigate(['portfolio']);
   }
   readUrl(event) {
-  if (event.target.files && event.target.files[0]) {
-    var reader = new FileReader();
-
+    if (event.target.files && event.target.files[0]) {
+      var reader = new FileReader();
     reader.onload = (event:any) => {
       this.sharedInformationService.personalImg= event.target.result;
     }

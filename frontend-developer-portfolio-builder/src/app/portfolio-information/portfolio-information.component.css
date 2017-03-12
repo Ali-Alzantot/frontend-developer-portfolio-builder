@@ -1,37 +1,36 @@
 /* main styles */
 fieldset{
-background:#FFF;
-border:1px solid #CCC;
-padding:10px;
-margin:20px auto;
-width:500px;
+    background:#FFF;
+    border:1px solid #CCC;
+    padding:10px;
+    margin:20px auto;
+    width:500px;
 }
 legend{
-background:#FFF;
-border:1px solid #CCC;
-padding:10px;
-margin-left: 45%;
+    background:#FFF;
+    border:1px solid #CCC;
+    padding:10px;
+    margin-left: 45%;
 }
 .my-skills .container .progress legend{
-margin-left:10%;
+    margin-left:10%;
 }
 label{
-margin-bottom: 10px;
-display: block;
-color: #5E6A68;
-font-size: 17px;
+    margin-bottom: 10px;
+    display: block;
+    color: #5E6A68;
+    font-size: 17px;
 }
 input{
-margin-bottom: 10px;
-padding: 8px;
+    padding: 8px;
 }
 input[type="text"],input[type="password"],textarea{
-display: block;
-padding:8px;
-width:300px;
+    display: block;
+    padding:4px;
+    width:300px;
 }
 hr{
-border:1px solid #EEE;
+    border:1px solid #EEE;
 }
 /*end of  main styles */
 
@@ -96,7 +95,6 @@ header .header-navbar .container ul li a{
 header .header-navbar .container ul li a:hover{
    color:#26975E;
 }
-
 /* end of header styles */
 
 /* start features styles */
@@ -259,6 +257,7 @@ progress::-webkit-progress-value {
 }
 .my-education .container{
     overflow: hidden;
+    padding-bottom: 10px;
     border-bottom: 2px solid #E8E8E8;
 }
 .my-education .container .main{
@@ -476,11 +475,11 @@ footer ul li img{
     height: 32px;
 }
 footer input[type="submit"]{
-margin-left:5%;  
-background-color:#FFFFFF;
-border: 3px solid #252F31;
-color:#191E22;
-padding: 10px 30px;
-width: 200px;
+    margin-left:5%;  
+    background-color:#FFFFFF;
+    border: 3px solid #252F31;
+    color:#191E22;
+    padding: 10px 30px;
+    width: 200px;
 }
 /* end of footer styles */

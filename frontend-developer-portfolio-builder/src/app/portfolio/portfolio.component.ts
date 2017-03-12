@@ -8,7 +8,9 @@ import {SharedInformationService} from '../shared-information.service'
 })
 
 export class PortfolioComponent implements OnInit {
-  constructor(private sharedInformationService:SharedInformationService) { }
+  constructor(private sharedInformationService:SharedInformationService) {
+    this.sharedInformationService=JSON.parse(localStorage.getItem("data"));
+  }
 
   ngOnInit() {
   }
