@@ -16,7 +16,7 @@ legend{
     margin-left:10%;
 }
 label{
-    margin-bottom: 10px;
+    margin:10px 0;
     display: block;
     color: #5E6A68;
     font-size: 17px;
@@ -77,6 +77,10 @@ header .header-navbar .container h2{
 
 header .header-navbar .container h2 span{
    color:#2A7240;
+}
+header .header-navbar .container h2 span input{
+    background-color: #252F31;
+    color: #FFF;
 }
 header .header-navbar .container ul{
     list-style: none;
@@ -470,15 +474,14 @@ footer ul{
 footer ul li{
     display: inline-block;
 }
-footer ul li img{
-    width: 32px;
-    height: 32px;
+#submitDiv{
+    background-color: #FFF;
+    text-align: center;
 }
-footer input[type="submit"]{
-    margin-left:5%;  
-    background-color:#FFFFFF;
+footer input[type="submit"]{  
+    background-color:#191E22;
     border: 3px solid #252F31;
-    color:#191E22;
+    color:#FFF;
     padding: 10px 30px;
     width: 200px;
 }
